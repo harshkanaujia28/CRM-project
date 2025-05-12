@@ -308,7 +308,8 @@ const  closeTicketByStaff  = async (req, res) => {
       return res.status(404).json({ message: 'Ticket not found' });
     }
 
-    if (ticket.assignedTo._id.toString() !== req.user.id.toString()) {
+    if (ticket.createdBy._id.toString() !== req.user.id.toString()) {
+      
       return res.status(403).json({ message: 'Not authorized to close this ticket' });
     }
 
