@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import Link from "next/link"
-import { useTheme } from "@/contexts/ThemeContext"
+
 
 export default function SettingsPage() {
   const [userRole, setUserRole] = useState<string | null>(null)
