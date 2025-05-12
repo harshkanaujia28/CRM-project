@@ -71,7 +71,7 @@ const forgotPassword = async (req, res) => {
 
     const token = jwt.sign({ userId: user._id }, 'JWT_SECRET', { expiresIn: '1h' });
 
-    const resetLink = `http://localhost:3000/reset-password/${token}`;
+    const resetLink = `https://crm-project-frontend-hazel.vercel.app/reset-password/${token}`;
     await sendEmail(
       user.email,
       'Password Reset Request',
