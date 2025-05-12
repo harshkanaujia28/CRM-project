@@ -51,7 +51,7 @@ export default function Header() {
     { name: "Dashboard", href: "/dashboard", icon: <Home className="h-5 w-5 mr-2" /> },
     { name: "Tickets", href: "/tickets", icon: <Ticket className="h-5 w-5 mr-2" /> },
     { name: "Technicians", href: "/technicians", icon: <Users className="h-5 w-5 mr-2" /> },
-    { name: "Staff", href: "/dashboard?tab=managers", icon: <UserCog className="h-5 w-5 mr-2" /> },
+    { name: "Staff", href: "/staff", icon: <UserCog className="h-5 w-5 mr-2" /> },
     // { name: "Customers", href: "/customers", icon: <Users className="h-5 w-5 mr-2" /> },
     // { name: "Customer Feedback", href: "/customer-feedback", icon: <MessageSquare className="h-5 w-5 mr-2" /> },
      { name: "Technician Reports", href: "/technician-reports", icon: <FileText className="h-5 w-5 mr-2" /> },
